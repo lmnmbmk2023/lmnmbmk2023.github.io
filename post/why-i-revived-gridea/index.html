@@ -294,6 +294,35 @@
   
 
 
+  
+    <section class="comment-section">
+  <h2 class="comment-section__title">评论</h2>
+  <div id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>-->
+  <script>
+    var gitalk = new Gitalk({
+      clientID: 'Ov23liCCk1eRaAARp0yY',
+      clientSecret: 'c2cbf3726e0957bc8a9fa8d85e95f11aa5f6852c',
+      repo: 'lmnmbmk2023.github.io',
+      owner: 'lmnmbmk2023',
+      admin: ['lmnmbmk2023'],
+      id: location.pathname,
+      distractionFreeMode: false,
+      proxy: 'https://rococo-swan-569097.netlify.app/github_access_token'
+      //proxy: 'https://band5b20.a1085643937.workers.dev/get_accesstoken' // 添加这一行
+      //proxy: 'https://workers.7234.cc.cd/get_accesstoken'
+      
+    });
+    gitalk.render('gitalk-container');
+  </script>
+</section>
+
+  
+
+
+
 </article>
 
   </main>
